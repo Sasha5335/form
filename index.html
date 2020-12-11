@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/resets.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<section class="form-container">
+		<div class="text-register">
+			<h1>Register</h1>
+		</div>
+		<span>Create your account. It's free and only takes a minute.</span>
+
+		<form class="form" method="GET">
+			<fieldset>
+				<div class="user-name">
+					<input class="entry-field" autofocus type="text" placeholder="First name" name="firstName"
+						pattern="^[A-Z][a-z]{2,15}$" required />
+					<input class="entry-field" autofocus type="text" placeholder="Last name" name="lastName" required />
+				</div>
+
+				<input class="form-email entry-field" type="email" placeholder="Email here" name="email"
+					autocomplete="email" required />
+
+				<input class="form-password entry-field" type="password" placeholder="Confirm password" name="password"
+					autocomplete="new-password" required />
+
+				<div class="form-checkbox">
+					<label class="checkbox">
+						<input type="checkbox" name="isAdult" value="true" required />
+						<span>I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy.</a></span>
+					</label>
+				</div>
+			</fieldset>
+
+			<button class="btn" type="submit">
+				<span>Submit form!</span>
+			</button>
+		</form>
+	</section>
+</body>
+
+</html>
